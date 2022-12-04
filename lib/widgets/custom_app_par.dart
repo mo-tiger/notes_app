@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'custom_search_icon.dart';
+
 class CustomAppPar extends StatelessWidget {
   const CustomAppPar({super.key});
 
@@ -14,25 +16,6 @@ class CustomAppPar extends StatelessWidget {
         Spacer(),
         CustomSearchIcon()
       ],
-    );
-  }
-}
-
-class CustomSearchIcon extends StatelessWidget {
-  const CustomSearchIcon({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 45,
-      width: 45,
-      decoration: const BoxDecoration(
-        color: Colors.white,
-      ),
-    );
-    child:
-    Center(
-      child: Icon(Icons.search),
     );
   }
 }
