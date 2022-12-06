@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:noteapp/widgets/custom_app_par.dart';
 
+import 'custom_note_item.dart';
+
 class NotesViewBody extends StatelessWidget {
   const NotesViewBody({super.key});
 
@@ -18,43 +20,6 @@ class NotesViewBody extends StatelessWidget {
             height: 10,
           ),
           NoteItem()
-        ],
-      ),
-    );
-  }
-}
-
-class NoteItem extends StatelessWidget {
-  const NoteItem({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.orange,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: const [
-          ListTile(
-            title: Text(
-              "Flutter Tips",
-              style: TextStyle(fontSize: 26),
-            ),
-            subtitle: Text("Fight Fight Fight And dance with the d3v!l",
-                style: TextStyle(fontSize: 16)),
-            trailing: Icon(
-              Icons.delete,
-              color: Colors.black,
-            ),
-          ),
-          Text(
-            "May",
-            style: TextStyle(
-              color: Colors.black,
-            ),
-          ),
         ],
       ),
     );
